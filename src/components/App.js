@@ -1,4 +1,4 @@
-import { Tabs, Tab } from 'react-bootstrap'
+import { Tabs, Tab, Button } from 'react-bootstrap'
 import OnjiBank from '../abis/OnjiBank.json'
 import React, { Component } from 'react'
 import Token from '../abis/Token.json'
@@ -131,30 +131,30 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-        <img src={logo} width="15%"  className="px-2"/>
+            <img src={logo} width="15%" className="px-2" />
             <b>ONJ Finance</b>
           </a>
         </nav>
         <div className="container-fluid mt-5 text-center">
           <br></br>
-          <img src={logo} width="10%"  className="p-2"/>
+          <img src={logo} width="10%" className="p-2" />
           <br></br>
           <h1>Welcome to ONJ Finance</h1>
           <h2>{this.state.account}</h2>
           <br></br>
-          <button
-            onClick={() => { this.loadBlockchainData(this.props.dispatch)}}
-            type="button"
-            className="btn btn-primary m-3"
+          <Button
+            onClick={() => {
+              this.loadBlockchainData(this.props.dispatch)
+            }}
           >
             Connect To Metamask
-          </button>
-    
+          </Button>
+
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
               <div className="content mr-auto ml-auto">
-                <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-                  <Tab eventKey="deposit" title="Deposit">
+                <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="tabs">
+                  <Tab eventKey="deposit" title="Deposit" className="text-light">
                     <div>
                       <br></br>
                       How much do you want to deposit?
