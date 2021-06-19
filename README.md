@@ -10,6 +10,6 @@ Users can also get loans from this Dapp.
 <img src="ss/onj3.png">
 <img src="ss/onj4.png">
 <img src="ss/onj5.png">
-<center>
+<div align="center">
 <img src="ss/onj6.png">
-</center>
+</div>
